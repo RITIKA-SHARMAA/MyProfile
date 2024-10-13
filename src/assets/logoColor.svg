@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2000 500"
+     width="100%"
+     height="auto"
+     data-id="lg_eEKblyuhP1xsH0GTPw"
+     data-version="1">
+    <g data-padding="20">
+        <g transform="translate(395.612 395.612)scale(5.36)">
+            <linearGradient id="a" x1="0" x2="1" y1="0" y2="0" gradientUnits="objectBoundingBox">
+                <stop offset="0%" stop-color="#f00b51"/>
+                <stop offset="100%" stop-color="#730062"/>
+            </linearGradient>
+            <filter id="b" width="152%" height="152%" x="-26%" y="-26%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                <feOffset result="oBlur"/>
+                <feFlood flood-color="#000" flood-opacity="1"/>
+                <feComposite in2="oBlur" operator="in"/>
+                <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+            <circle cx="112.759" cy="-21.942" r="50" fill="url(#a)" stroke="#fff8f8" stroke-width="4" filter="url(#b)" paint-order="stroke" vector-effect="non-scaling-stroke"/>
+        </g>
+        <g fill="#fff" stroke="#fff8fd" transform="translate(10 10)scale(.96403)">
+            <filter id="c" width="160%" height="152%" x="-30%" y="-26%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="15"/>
+                <feOffset result="oBlur"/>
+                <feFlood flood-color="#6a1f1f" flood-opacity="1"/>
+                <feComposite in2="oBlur" operator="in"/>
+                <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+            <path stroke-width="7.56" d="M969.97 414.45h-40.02V121.68h83.3q34.71 0 58.39 9.19 23.68 9.18 36.14 27.15 12.45 17.97 12.45 44.92 0 21.23-8.78 37.97t-24.91 28.18q-16.12 11.43-38.17 16.74 6.53 3.67 13.06 12.25l85.34 116.37h-35.11q-11.03 0-15.93-8.57l-75.95-104.53q-3.67-4.9-7.76-6.95-4.08-2.04-12.25-2.04h-29.8Zm0-261.33v110.25h41.24q33.07 0 51.86-15.11 18.78-15.11 18.78-42.46 0-26.14-17.36-39.41-17.35-13.27-51.24-13.27Zm147 229.48-4.5 31.85-19.6-37.15ZM942.2 414.45h-41.65v-16.74q0-3.67 1.63-5.92 1.64-2.24 4.9-2.65l30.63-6.54Zm-41.65-292.77h41.65l-4.49 31.85-30.63-6.53q-3.26-.82-4.9-2.86-1.63-2.04-1.63-5.72Zm98.82 292.77h-41.65l4.49-31.85 30.62 6.54q3.27.41 4.9 2.65 1.64 2.25 1.64 5.92Zm154.75 0h-41.65l4.5-31.85 30.62 6.54q3.27.41 4.9 2.65 1.63 2.25 1.63 5.92Z" filter="url(#c)" font-family="Aleo" font-size="408.333"/>
+        </g>
+        <path fill="transparent" stroke="transparent" d="M722 0h556v556H722z"/>
+    </g>
+</svg>
