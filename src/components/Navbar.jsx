@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-
-import { styles } from '../styles.js';  // Make sure this file exists and exports the styles
-import { navLinks } from '../constants'; // Ensure this file exports navLinks
-import { logo, menu, close } from '../assets'; // Ensure these assets are correctly imported
+import { HashLink as Link } from 'react-router-hash-link'; // Using HashLink for smooth scrolling
+import { styles } from '../styles';  // Ensure styles are imported correctly
+import { navLinks } from '../constants';  // Ensure navLinks are available
+import { logo, menu, close } from '../assets';  // Ensure assets are imported
 
 // Define the LiLink component
 const LiLink = ({ children, className, onClick, to }) => (
     <li className={className} onClick={onClick}>
-        <Link to={to}>{children}</Link>
+        <Link to={to} smooth>{children}</Link>  {/* Using smooth scrolling */}
     </li>
 );
 
@@ -33,7 +32,7 @@ const Navbar = () => {
         <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black bg-opacity-60`}>
             <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
                 <Link
-                    to='/'
+                    to='/#'
                     className='flex items-center gap-2'
                     onClick={() => {
                         setActive('');
@@ -52,7 +51,7 @@ const Navbar = () => {
                     {navLinks.map((nav) => (
                         <LiLink
                             key={nav.id}
-                            to={`#${nav.id}`} // Pass the href as `to`
+                            to={`#${nav.id}`}  // Pass the hash link
                             className={`${
                                 active === nav.title ? 'text-white' : 'text-secondary'
                             } hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -81,7 +80,7 @@ const Navbar = () => {
                             {navLinks.map((link) => (
                                 <LiLink
                                     key={link.id}
-                                    to={`#${link.id}`} // Pass the href as `to`
+                                    to={`#${link.id}`}  // Pass the hash link
                                     className={`${
                                         active === link.title ? 'text-white' : 'text-secondary'
                                     } font-poppins font-medium cursor-pointer text-[16px]`}
